@@ -168,17 +168,3 @@ document.on('mouseleave', function () {
     animation.play();
 });
 
-window.on('mousewheel, DOMMouseScroll', function (e) {
-//    var wheelDistance = e.detail ? -e.detail / 6 : e.wheelDelta / 120;
-
-    zoom.final += wheelDistance / 10;
-    zoom.final = Math.min(Math.max(zoom.final, .25), 2);
-
-    animation.play();
-});
-
-document.on('click', function () {
-    zoom.final = 1;
-
-    animation.play();
-});

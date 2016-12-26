@@ -9,6 +9,23 @@ add_action( 'wp_enqueue_scripts', 'blogtheme_scripts' );
 if (function_exists('add_theme_support')) {
 add_theme_support( 'post-thumbnails' );
 }
+
+// Creates Cart Visit Post Type
+
+add_action( 'init', 'create_post_type' );
+    function create_post_type() {
+            register_post_type( 'cart-visit',
+                    array(
+                            'labels' => array(
+                                    'name' => __( 'کارت ویزیت' ),
+                                    'singular_name' => __( 'کارت ویزیت' )
+                            ),
+                    'public' => true,
+                    'has_archive' => true
+                    )
+            );
+}
+
 // add menu
 function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));

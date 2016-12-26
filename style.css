@@ -1323,7 +1323,7 @@ Developer URL: www.imsam.com .
 
 	@media screen and (min-width: 992px) {
 		.container {
-			height: 820px;
+			height: auto;
 		}
 
 		.hideanimate {
@@ -2065,7 +2065,7 @@ Developer URL: www.imsam.com .
 		  background-size: 400%;
 		  opacity: 1;
 			border-bottom: 0 none;
-	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
 		}
 		.single-content .gallery .flyer__page--6 {
 		  background-position: left top;
@@ -2129,24 +2129,22 @@ Developer URL: www.imsam.com .
 	      margin-top: 70px;
 		  -webkit-backface-visibility: hidden;
 				  backface-visibility: hidden;
-		  background: url(../images/visit.jpg) no-repeat;
+		  background: url(images/visit.jpg) no-repeat;
 		  background-size: 100%;
 		  opacity: 1;
 		  border-bottom: 0 none;
 	      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
 		}
 		.single-content .gallery .flyer__page1--6 {
-		  background-position: left top;
+		  background-position: center top !important;
 		  -webkit-transform: rotateY(-45deg) translateZ(99px);
 				  transform: rotateY(-45deg) translateZ(99px);
-/*
-			background:  url(../images/visit.jpg);
-			-webkit-background-size: 100%;
-				background-size: 100%;
-*/
+			
+
+
 		}
 		.single-content .gallery .flyer__page1--5 {
-		  background-position: right bottom;
+		  background-position: center bottom !important;
 		  -webkit-transform: rotateY(135deg) translateZ(-99px);
 				  transform: rotateY(135deg) translateZ(-99px);
 		}

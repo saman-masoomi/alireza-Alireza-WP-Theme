@@ -13,7 +13,7 @@
 
 					<h2><?php echo get_option('index-title-2') ?></h2>
 
-					<a href="http://localhost/alireza/category/" ?><button class="work-button"><span><?php echo get_option('button-text') ?></span></button></a>
+					<button class="work-button"><span><?php echo get_option('button-text') ?></span></button>
 					<div id="logo" class="play hidden-sm hidden-xs"></div>
 				</div>
 				
@@ -21,4 +21,4 @@
 			</div>
 		</div>
 		
-<?php get_footer();?> 
+<?php get_footer();?>
